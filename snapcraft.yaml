@@ -47,11 +47,14 @@ parts:
       - fcitx-frontend-gtk3
   dino-client:
     after: [desktop-gtk3]
-    plugin: cmake
+    plugin: nil
     source-type: git
     source-branch: master
     source-depth: 1
     source: https://github.com/dino/dino.git
+    prepare: |
+      ./configure
+      make
 
     build-packages:
       - build-essential
