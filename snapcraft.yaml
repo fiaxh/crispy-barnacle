@@ -45,10 +45,11 @@ parts:
       - ibus-gtk3
       - libibus-1.0-5
       - fcitx-frontend-gtk3
+
   dino-client:
     after: [desktop-gtk3]
     plugin: nil
-    prepare: |
+    override-build: |
       git clone https://github.com/dino/dino.git
       cd dino
       ./configure
