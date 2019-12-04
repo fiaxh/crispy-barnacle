@@ -48,17 +48,16 @@ parts:
   dino-client:
     after: [desktop-gtk3]
     plugin: nil
-    source-type: git
-    source-branch: master
-    source-depth: 1
-    source: https://github.com/dino/dino.git
     prepare: |
+      git clone https://github.com/dino/dino.git
+      cd dino
       ./configure
       make
 
     build-packages:
       - build-essential
       - cmake
+      - ninja-build
       - fuse
       - git
       - gettext
