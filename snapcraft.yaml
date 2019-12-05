@@ -52,7 +52,7 @@ parts:
     override-build: |
       git clone https://github.com/dino/dino.git
       cd dino
-      ./configure
+      ./configure --disable-plugin=openpgp
       make
 
     build-packages:
@@ -78,7 +78,6 @@ parts:
       - zlib1g
       - libassuan0
       - libatk1.0-0
-      - libatk-bridge2.0-0
       - libatspi2.0-0
       - libcairo2
       - libcairo-gobject2
