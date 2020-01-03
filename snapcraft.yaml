@@ -15,7 +15,8 @@ apps:
 parts:
   dino-im:
     plugin: autotools
-    configflags: --disable-plugin=openpgp
+    configflags:
+      - --disable-plugin=openpgp
     source-type: git
     source: https://github.com/dino/dino.git
     build-packages:
