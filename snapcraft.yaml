@@ -4,7 +4,7 @@ summary: dino (XMPP Client)
 description: |
   Modern Jabber/XMPP Client using GTK+/Vala
 
-base: core18
+base: core20
 confinement: devmode
 
 apps:
