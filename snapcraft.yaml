@@ -17,6 +17,8 @@ apps:
       - desktop-legacy
       - wayland
       - x11
+      - gsettings
+      - home
 
 parts:
   dino-im:
