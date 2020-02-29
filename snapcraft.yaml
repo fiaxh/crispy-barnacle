@@ -17,6 +17,7 @@ parts:
     plugin: autotools
     configflags:
       - --disable-plugin=openpgp
+      - --with-libsignal-in-tree
     source-type: git
     source: https://github.com/dino/dino.git
     build-packages:
